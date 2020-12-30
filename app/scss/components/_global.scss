@@ -10,13 +10,34 @@
 body{
     font-family: 'Open Sans';
     font-weight: 400;
-    font-size: 14px;
+    font-size: 18px;
+    background-color: var(--DarkBlueBody);
+    color: var(--White);
+    overflow-x: hidden;
 }
 
 a{
     text-decoration: none;
+    color: var(--White);
 }
 
 li{
     list-style: none;
+}
+
+.btn{
+    width: 230px;
+    height: 50px;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Blue);
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: var(--Cyan);
 }

@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 :root {
-  --DarkBlue: hsl(217, 28%, 15%);
-  --DarkBlue: hsl(218, 28%, 13%);
-  --DarkBlue: hsl(216, 53%, 9%);
-  --DarkBlue: hsl(219, 30%, 18%);
+  --DarkBlueEmail: hsl(217, 28%, 15%);
+  --DarkBlueBody: hsl(218, 28%, 13%);
+  --DarkBluefooter: hsl(216, 53%, 9%);
+  --DarkBlueTestimonials: hsl(219, 30%, 18%);
   --Cyan: hsl(176, 68%, 64%);
   --Blue: hsl(198, 60%, 50%);
   --LightRed: hsl(0, 100%, 63%);
@@ -18,12 +18,130 @@
 body {
   font-family: 'Open Sans';
   font-weight: 400;
-  font-size: 14px; }
+  font-size: 18px;
+  background-color: var(--DarkBlueBody);
+  color: var(--White);
+  overflow-x: hidden; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: var(--White); }
 
 li {
   list-style: none; }
+
+.btn {
+  width: 230px;
+  height: 50px;
+  padding: 20px;
+  margin: 10px auto;
+  border-radius: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Blue); }
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--Cyan); }
+
+.header {
+  width: 100%;
+  height: 700px; }
+  .header .navbar {
+    width: 100%;
+    height: 90px;
+    padding: 40px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header .navbar .navbar__logo {
+      cursor: pointer; }
+    .header .navbar .navbar__links a {
+      margin-left: 30px; }
+    .header .navbar .navbar__links a:hover {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      text-decoration: underline; }
+    .header .navbar .navbar__hamburger {
+      cursor: pointer;
+      display: none; }
+      .header .navbar .navbar__hamburger i {
+        font-size: 40px; }
+  .header .hero {
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .header .hero .hero__img {
+      width: 600px; }
+      .header .hero .hero__img img {
+        width: 80%; }
+    .header .hero .hero__texts {
+      width: 600px;
+      text-align: center; }
+      .header .hero .hero__texts .hero__title {
+        font-size: 30px;
+        margin: 10px;
+        line-height: 40px; }
+      .header .hero .hero__texts .hero__text-description {
+        font-size: 15px;
+        margin: 10px;
+        line-height: 25px; }
+
+@media (max-width: 400px) {
+  .header {
+    width: 100%;
+    height: 570px; }
+    .header .navbar .navbar__links {
+      width: 80%;
+      height: 50vh;
+      position: absolute;
+      top: 15vh;
+      background-color: var(--DarkBlueTestimonials);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: justify;
+      border-radius: 10px;
+      box-shadow: -1px 1px 5px 0px #1c1c1c;
+      transform: scale(0);
+      transition: transform .50s; }
+      .header .navbar .navbar__links a {
+        margin: 30px; }
+    .header .navbar .navbar__logo img {
+      width: 150px; }
+    .header .navbar .navbar__hamburger {
+      display: block; }
+    .header .navbar .navbar__links.active {
+      transform: scale(1);
+      transition: transform .50s; }
+    .header .hero {
+      width: 100%;
+      max-width: 650px;
+      margin: 10px auto; }
+      .header .hero .hero__img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .header .hero .hero__img img {
+          width: 85%; }
+      .header .hero .hero__texts {
+        width: 100%; }
+        .header .hero .hero__texts .hero__title {
+          font-size: 20px;
+          line-height: 25px; }
+        .header .hero .hero__texts .hero__text-description {
+          font-size: 13px;
+          line-height: 20px; }
+        .header .hero .hero__texts .btn {
+          width: 185px;
+          height: 45px; } }
 
 /*# sourceMappingURL=styles.css.map */

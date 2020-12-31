@@ -46,6 +46,50 @@
             }
         }
     }
+
+    .productive{
+        width: 100%;
+        max-width: 1200px;
+        margin: 10px auto;
+        .productive__container{
+            width: 100%;
+            margin: 10px auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .productive__img{
+                width: 600px;
+                img{
+                    width: 80%;
+                }
+            }
+
+            .productive__texts{
+                width: 600px;
+                .productive__title{
+                    font-size: 30px;
+                    line-height: 40px;
+                    margin: 10px;
+                }
+
+                .productive__texts-description{
+                    font-size: 15px;
+                    margin: 10px;
+                    line-height: 25px;
+                }
+
+                .productive__ancle{
+                    display: inline-block;
+                    margin: 10px;
+                    font-size: 16px;
+                }
+
+                .productive__ancle:hover{
+                    border-bottom: 2px solid var(--White);
+                }
+            }
+        }
+    }
 }
 
 
@@ -75,6 +119,43 @@
 
                     .service__texts-description{
                         font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .productive{
+            width: 100%;
+            max-width: 650px;
+            margin: 10px auto;
+            .productive__container{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: column;
+                .productive__img{
+                    width: 80%;
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                .productive__texts{
+                    width: 80%;
+                    .productive__title{
+                        font-size: 20px;
+                        text-align: center;
+                        line-height: 25px;
+                    }
+
+                    .productive__texts-description{
+                        font-size: 13px;
+                        text-align: center;
+                    }
+
+                    .productive__ancle{
+                        display: flex;
+                        justify-content: center;
                     }
                 }
             }

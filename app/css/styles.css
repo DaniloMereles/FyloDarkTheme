@@ -31,7 +31,7 @@ li {
   list-style: none; }
 
 .btn {
-  width: 230px;
+  width: 255px;
   height: 50px;
   padding: 20px;
   margin: 10px auto;
@@ -52,19 +52,22 @@ li {
   .header .navbar {
     width: 100%;
     height: 90px;
-    padding: 40px;
     position: relative;
+    padding: 45px;
     display: flex;
     justify-content: space-between;
     align-items: center; }
     .header .navbar .navbar__logo {
+      margin-left: 40px;
       cursor: pointer; }
-    .header .navbar .navbar__links a {
-      margin-left: 30px; }
-    .header .navbar .navbar__links a:hover {
-      font-family: 'Raleway', sans-serif;
-      font-weight: 700;
-      text-decoration: underline; }
+    .header .navbar .navbar__links {
+      margin-right: 40px; }
+      .header .navbar .navbar__links a {
+        margin-left: 30px; }
+      .header .navbar .navbar__links a:hover {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        text-decoration: underline; }
     .header .navbar .navbar__hamburger {
       cursor: pointer;
       display: none; }
@@ -222,6 +225,46 @@ li {
           font-size: 16px; }
         .main .productive .productive__container .productive__texts .productive__ancle:hover {
           border-bottom: 2px solid var(--White); }
+  .main .cards {
+    width: 100%;
+    max-width: 1250px;
+    padding: 10px;
+    margin: 10px auto;
+    background-image: url(../assets/img/bg-quotes.png);
+    background-repeat: no-repeat;
+    background-position: left top; }
+    .main .cards .cards__container {
+      width: 100%;
+      margin: 10px auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap; }
+      .main .cards .cards__container .cards__card {
+        width: 390px;
+        height: 200px;
+        border-radius: 10px;
+        padding: 15px;
+        margin: 10px;
+        background-color: var(--DarkBlueTestimonials); }
+        .main .cards .cards__container .cards__card .cards__texts-description {
+          font-size: 15px;
+          margin: 10px; }
+        .main .cards .cards__container .cards__card .cards__userProfile {
+          display: flex;
+          align-items: center; }
+          .main .cards .cards__container .cards__card .cards__userProfile .cards__User-img {
+            margin: 10px; }
+            .main .cards .cards__container .cards__card .cards__userProfile .cards__User-img img {
+              width: 40px;
+              height: 40px;
+              clip-path: circle(50%); }
+          .main .cards .cards__container .cards__card .cards__userProfile .cards__Username {
+            margin: 10px; }
+            .main .cards .cards__container .cards__card .cards__userProfile .cards__Username .username {
+              font-size: 14px; }
+            .main .cards .cards__container .cards__card .cards__userProfile .cards__Username .user-Description {
+              font-size: 12px; }
 
 @media (max-width: 475px) {
   .main {

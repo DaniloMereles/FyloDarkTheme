@@ -1,0 +1,208 @@
+.footer{
+    width: 100%;
+    height: 630px;
+    padding: 20px;
+    margin-top: 150px;
+    background-color: var(--DarkBluefooter);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    .footer__email{
+        width: 70%;
+        height: 250px;
+        padding: 30px;
+        background-color: var(--DarkBlueEmail);
+        border-radius: 20px;
+        position: absolute;
+        bottom: 490px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        .footer__email-form{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .btn{
+                width: 30%;
+                height: 45px;
+                margin: 10px;
+            }
+
+            .footer__input{
+                width: 70%;
+                height: 45px;
+                padding: 10px;
+                margin: 10px;
+                border: none;
+                outline: none;
+                border-radius: 30px;
+                
+            }
+        }
+
+        .footer__email-texts{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .footer__email-title{
+                text-align: center;
+                margin: 10px;
+            }
+    
+            .footer__email-description{
+                text-align: center;
+                margin: 10px;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .footer__content{
+        width: 100%;
+        height: 450px;
+        margin-top: 200px;
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);   
+        grid-template-rows: repeat(4, 2fr);
+        grid-template-areas: "logo logo logo logo";
+        gap: 10px;
+
+        .footer__logo{
+            padding: 10px;
+            grid-area: logo;
+        }
+
+        .footer__contact{
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            a{
+                i{
+                    margin-left: 10px
+                    ;
+                }
+                margin: 10px;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+
+        .footer__contact.call{
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+
+        .footer__contact.grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+
+        .footer__contact.social{
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            i{
+                display: inline-block;
+                margin-left: 20px;
+                padding: 10px;
+                border: 1px solid var(--White);
+                border-radius: 20px;
+                cursor: pointer;
+            }
+
+            i.bxl-facebook:hover{
+                background-color: var(--Blue);
+            }
+
+            i.bxl-twitter:hover{
+                background-color: var(--twitter-color);
+            }
+
+            i.bxl-instagram:hover{
+                background-color: var(--Pink);
+            }
+        }
+    }
+}
+
+@media(max-width: 800px){
+    .footer{
+        width: 100%;
+        height: 800px;
+        .footer__email{
+            width: 95%;
+            height: 230px;
+            padding: 15px;
+            position: absolute;
+            bottom: 700px;
+            .footer__email-texts{
+                .footer__email-description{
+                    font-size: 13px;
+                    margin: 5px;
+                }
+
+                .footer__email-title{
+                    font-size: 19px;
+                    margin: 5px;
+                }
+            }
+
+            .footer__email-form{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .footer__input{
+                    width: 95%;
+                    height: 40px;
+                }
+
+                .btn{
+                    width: 95%;
+                    height: 40px;
+                    a{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .footer__content{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas: "logo";
+            margin-top: 20px;
+            .footer__logo{
+                grid-area: logo;
+            }
+
+            .footer__contact.call{
+                text-align: center;
+            }
+
+            .footer__contact.grid{
+                text-align: center;
+            }
+
+
+            .footer__contact.social{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

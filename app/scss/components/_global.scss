@@ -1,3 +1,4 @@
+@import"./variables";
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
@@ -35,9 +36,21 @@ li{
     justify-content: center;
     align-items: center;
     background-color: var(--Blue);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    a{
+        font-size: 'Raleway';
+        font-weight: 700;
+        font-size: 14px;
+    }
 }
 
 .btn:hover{
     cursor: pointer;
     background-color: var(--Cyan);
+}
+
+p{
+    font-size: var(--font-size);
 }
